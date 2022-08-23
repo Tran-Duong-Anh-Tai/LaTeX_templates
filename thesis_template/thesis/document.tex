@@ -1,0 +1,32 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage{lineno}
+\linenumbers
+\input{../template/template.tex}
+\minister{BỘ GIÁO DỤC VÀ ĐÀO TẠO}
+\university{TRƯỜNG ĐẠI HỌC SƯ PHẠM TP. HỒ CHÍ MINH}
+\faculty{KHOA VẬT LÝ}
+\thesistitle{\fontsize{22}{35}\selectfont NGHIÊN CỨU ABC} 
+\major{SỰ PHẠM VẬT LÝ}
+\majornum{102}
+\title{KHOÁ LUẬN TỐT NGHIỆP}
+\logo{\includegraphics[scale=0.3]{logoa.png}}
+\author{NGUYỄN VĂN A}
+\supervisor{TS. ABC}
+\cityyear{TP. Hồ Chí Minh -- 2016}
+\usepackage{blindtext}
+\begin{document}	
+\createtitle
+\input{../components/thank.tex}\clearpage
+\pagenumbering{roman}
+\tableofcontents\clearpage
+\listoftables\clearpage
+\listoffigures\clearpage 
+\pagenumbering{arabic}
+\input{../components/preface.tex}
+\input{../components/chapter_1.tex}
+\input{../components/chapter_2.tex}
+\input{../components/chapter_3.tex}
+\input{../components/conclusion.tex}
+\bibliographystyle{ieeetr}
+\bibliography{../components/reference.bib}
+\end{document} 
